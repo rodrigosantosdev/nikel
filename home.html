@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikel - Lançamento</title>
+    <title>Nikel - Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./public/css/styles.css">
@@ -24,14 +24,14 @@
             <ul class="navbar-nav d-flex align-items-center">
               <li>
                 <a class="nav-link active" aria-current="page" href="home.html">
-                  <button type="button" class="btn" title="botao home">
+                  <button type="button" class="btn color-primary" title="botao home">
                     <i class="bi bi-house-door-fill fs-4"></i>
                   </button>
                 </a>
               </li>
               <li>
                 <a class="nav-link active" aria-current="page" href="transactions.html">
-                  <button type="button" title="botao de moeda" class="btn color-primary" title="botao">
+                  <button type="button" title="botao de moeda" class="btn" title="botao">
                     <i class="bi bi-currency-exchange fs-4"></i>
                   </button>
                 </a>
@@ -55,8 +55,8 @@
       <div class="container-lg">
         <div class="row d-flex justify-content-center align-items-center my-4">
           <div class="col d-flex align-items-center gap-2">
-            <i class="bi bi-currency-exchange color-secondary icon-details"></i>
-            <span class="fs-2">Lançamento</span>
+            <i class="bi bi-cash-coin color-secondary icon-details"></i>
+            <span class="fs-2">R$ 0,00</span>
           </div>
           <div class="col d-flex justify-content-end">
             <div class="text-center">
@@ -68,33 +68,48 @@
           <div class="col shadow-lg info p-4">
             <div class="container">
               <div class="row">
-                <div class="col">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Data</th>
-                        <th scope="col">Valor</th>
-                        <th scope="col">Tipo</th>
-                        <th scope="col">Descrição</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">04/12/2023</th>
-                        <td>R$50,00</td>
-                        <td>Saida</td>
-                        <td>Gasolina</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="col-6 fs-4">
+                  <span">
+                    Entradas
+                    <i class="bi bi-arrow-down-circle fs-2 align-middle"></i>
+                    </span>
+                </div>
+                <div class="col-6 fs-4">
+                  <span>
+                    Saidas
+                    <i class="bi bi-arrow-up-circle fs-2 align-middle"></i>
+                  </span>
+                </div>
+                <div class="col-12">
+                  <hr>
                 </div>
               </div>
             </div>
+            <div class="row mb-3">
+              <div class="col-6">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">R$ 100,00</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">R$ 500,00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn button-default">Ver Todas</button>
+            </div>
+
           </div>
-          <button type="button" title="botao com um icone de adicionar" data-bs-toggle="modal" data-bs-target="#transactionModal" class="button-float">
-            <i class="bi bi-plus"></i>
-          </button>
         </div>
+        <button type="button" title="botao com um icone de adicionar" data-bs-toggle="modal" data-bs-target="#transactionModal" class="button-float">
+          <i class="bi bi-plus"></i>
+        </button>
 
       </div>
       <!-- Modal -->

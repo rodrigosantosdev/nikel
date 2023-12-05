@@ -96,3 +96,7 @@
   border: 2px solid #4c0070;
   color: #4c79d3;
 }
+
+.logout {
+  min-width: auto;
+}
